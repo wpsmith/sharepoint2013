@@ -2,12 +2,12 @@
 <webParts>
   <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
     <metaData>
-      <type name="TestProjesi.Webparts.AjaxTest.AjaxTest, $SharePoint.Project.AssemblyFullName$" />
+      <type name="TestProjesi.Webparts.AjaxPageWp.AjaxPageWp, $SharePoint.Project.AssemblyFullName$" />
       <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
     </metaData>
     <data>
       <properties>
-        <property name="Title" type="string">TestProjesi - AjaxTest</property>
+        <property name="Title" type="string">TestProjesi - AjaxPageWp</property>
         <property name="Description" type="string">My Visual Web Part</property>
       </properties>
     </data>
