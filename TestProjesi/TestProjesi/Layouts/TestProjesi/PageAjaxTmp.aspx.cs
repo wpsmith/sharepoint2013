@@ -12,7 +12,15 @@ namespace TestProjesi.Layouts.TestProjesi
             {
                 using (SPWeb web= site.OpenWeb())
                 {
-
+                    SPList list = web.Lists.TryGetList("Category");
+                    if (list != null)
+                    {
+                        SPQuery qry = new SPQuery();
+                        qry.ViewFields = @"<FieldRef Name='Title' /><FieldRef Name='CategoryDescription' /><FieldRef Name='ID' />";
+                        SPListItemCollection listItems = list.GetItems(qry);
+                        lvCategory.DataSource = listItems.GetDataTable();
+                        lvCategory.DataBind();
+                    } 
                 }
             }
 
