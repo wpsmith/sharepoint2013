@@ -6,3 +6,21 @@
 <%@ Import Namespace="Microsoft.SharePoint" %> 
 <%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="AjaxPageWpUserControl.ascx.cs" Inherits="TestProjesi.Webparts.AjaxPageWp.AjaxPageWpUserControl" %>
+<script src="../../../../AssetModule/jquery-1.11.0.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $.ajax({
+        url: 'http://sharepoint15/_layouts/15/start.aspx#/Lists/Category/AllItems.aspx',
+        type: 'GET',
+        success: function (result) {
+            $('#Main').html(result);
+
+        },
+        error: function() {
+            alert("bir sorun olustu");
+        }
+
+
+    });
+
+</script>

@@ -13,18 +13,31 @@
 
 <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
     <asp:ListView ID="lvCategory" runat="server">
-        
-            <tr>
-                <td>
-                    <itemtemplate><%# Eval("ID") %></itemtemplate>
-                </td>
-                <td>
-                    <itemtemplate><%# Eval("Title") %> </itemtemplate>
-                </td>
-                <td>
-                    <itemtemplate><%# Eval("CategoryDescription") %></itemtemplate>
-                </td>
-            </tr>
+       <ItemTemplate>
+            <table>
+
+                <tr>
+
+                    <td>
+                        <%# Eval("ID") %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <%# Eval("Title") %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <%# Eval("CategoryDescription") %>
+                    </td>
+                </tr>
+            </table>
+            <hr />
+        </ItemTemplate>
+            
+                 
+               
         
     </asp:ListView>
 </asp:Content>

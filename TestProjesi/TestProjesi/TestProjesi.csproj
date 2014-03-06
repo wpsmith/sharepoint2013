@@ -14,7 +14,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <SandboxedSolution>False</SandboxedSolution>
-    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -81,6 +81,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="AssetModule\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8613d9a1-04fe-4331-bda3-6fa4deab1d89}</SharePointProjectItemId>
+    </None>
     <None Include="Features\Feature1\Feature1.feature">
       <FeatureId>{4ab4e084-a275-4fd4-b2be-d914a4c9181b}</FeatureId>
     </None>
@@ -101,6 +104,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="AssetModule\Elements.xml" />
+    <Content Include="AssetModule\jquery-1.11.0.js" />
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Content>
