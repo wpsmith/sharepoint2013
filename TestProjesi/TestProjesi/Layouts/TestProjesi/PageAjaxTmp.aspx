@@ -12,6 +12,7 @@
 </asp:Content>
 
 <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
+    <asp:Panel ID="Panel1" runat="server">
     <asp:ListView ID="lvCategory" runat="server">
        <ItemTemplate>
             <table>
@@ -35,11 +36,7 @@
             </table>
             <hr />
         </ItemTemplate>
-            
-                 
-               
-        
-    </asp:ListView>
+    </asp:ListView></asp:Panel>
 </asp:Content>
 <asp:Content ID="PageTitle" ContentPlaceHolderID="PlaceHolderPageTitle" runat="server">
     Application Page

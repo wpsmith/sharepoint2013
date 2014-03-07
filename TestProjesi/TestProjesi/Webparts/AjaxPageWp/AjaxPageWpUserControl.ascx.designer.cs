@@ -11,5 +11,14 @@ namespace TestProjesi.Webparts.AjaxPageWp {
     
     
     public partial class AjaxPageWpUserControl {
+        
+        /// <summary>
+        /// Panel2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel2;
     }
 }

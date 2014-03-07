@@ -13,6 +13,15 @@ namespace TestProjesi.Layouts.TestProjesi {
     public partial class PageAjaxTmp {
         
         /// <summary>
+        /// Panel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel1;
+        
+        /// <summary>
         /// lvCategory control.
         /// </summary>
         /// <remarks>

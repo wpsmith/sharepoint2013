@@ -10,10 +10,10 @@
 
 <script type="text/javascript">
     $.ajax({
-        url: 'http://sharepoint15/_layouts/15/start.aspx#/Lists/Category/AllItems.aspx',
+        url: '/_layouts/15/TestProjesi/PageAjaxTmp.aspx',
         type: 'GET',
         success: function (result) {
-            $('#Main').html(result);
+            $('#'+'<%= Panel2.ClientID %>').html(result);
 
         },
         error: function() {
@@ -24,3 +24,4 @@
     });
 
 </script>
+<asp:Panel ID="Panel2" runat="server"></asp:Panel>
