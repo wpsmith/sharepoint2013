@@ -12,31 +12,32 @@
 </asp:Content>
 
 <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
-    <asp:Panel ID="Panel1" runat="server">
-    <asp:ListView ID="lvCategory" runat="server">
-       <ItemTemplate>
-            <table>
+    <asp:Panel ID="Panel1" runat="server" ClientIDMode="Static">
+        <asp:ListView ID="lvCategory" runat="server">
+            <ItemTemplate>
+                <table>
 
-                <tr>
+                    <tr>
 
-                    <td>
-                        <%# Eval("ID") %>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <%# Eval("Title") %>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <%# Eval("CategoryDescription") %>
-                    </td>
-                </tr>
-            </table>
-            <hr />
-        </ItemTemplate>
-    </asp:ListView></asp:Panel>
+                        <td>
+                            <%# Eval("ID") %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <%# Eval("Title") %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <%# Eval("CategoryDescription") %>
+                        </td>
+                    </tr>
+                </table>
+                <hr />
+            </ItemTemplate>
+        </asp:ListView>
+    </asp:Panel>
 </asp:Content>
 <asp:Content ID="PageTitle" ContentPlaceHolderID="PlaceHolderPageTitle" runat="server">
     Application Page
