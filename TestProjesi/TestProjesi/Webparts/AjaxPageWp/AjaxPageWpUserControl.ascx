@@ -20,8 +20,6 @@
         error: function () {
             alert("bir sorun olustu");
         }
-
-
     });
 
 </script>
