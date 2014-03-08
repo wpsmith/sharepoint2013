@@ -79,6 +79,14 @@
     <Compile Include="Webparts\AjaxPageWp\AjaxPageWpUserControl.ascx.designer.cs">
       <DependentUpon>AjaxPageWpUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="Webparts\UpdatePanelWp\UpdatePanelWp.cs" />
+    <Compile Include="Webparts\UpdatePanelWp\UpdatePanelWpUserControl.ascx.cs">
+      <DependentUpon>UpdatePanelWpUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webparts\UpdatePanelWp\UpdatePanelWpUserControl.ascx.designer.cs">
+      <DependentUpon>UpdatePanelWpUserControl.ascx.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="AssetModule\SharePointProjectItem.spdata">
@@ -101,6 +109,10 @@
     <None Include="Webparts\AjaxPageWp\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7fdd7e51-d0d6-4f94-b4a4-0cc70dee25fe}</SharePointProjectItemId>
     </None>
+    <None Include="Webparts\UpdatePanelWp\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{54c612c7-2798-4b19-9a72-2777896e6f83}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\UpdatePanelWp\UpdatePanelWp.webpart" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -112,6 +124,8 @@
     <Content Include="Layouts\TestProjesi\PageAjaxTmp.aspx" />
     <Content Include="Webparts\AjaxPageWp\AjaxPageWpUserControl.ascx" />
     <Content Include="Webparts\AjaxPageWp\Elements.xml" />
+    <Content Include="Webparts\UpdatePanelWp\Elements.xml" />
+    <Content Include="Webparts\UpdatePanelWp\UpdatePanelWpUserControl.ascx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
