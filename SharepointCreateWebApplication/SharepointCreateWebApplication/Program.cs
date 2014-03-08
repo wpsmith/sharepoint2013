@@ -48,23 +48,6 @@ namespace SharepointCreateWebApplication
                 webApplication.Provision();
             }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
         private static SecureString StringToSecureString(string password)
