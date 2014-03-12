@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.SharePoint;
@@ -48,10 +49,15 @@ namespace TestProjesi.Classes
             
         }
 
-        public static void CreateDocumentFolder(this SPWeb spWeb,string folderName)
+        public static void CreateDocumentLibrary(this SPWeb spWeb,string DocumentLibraryName)
         {
-          sp  
-            
+            spWeb.Lists.Add(DocumentLibraryName, DocumentLibraryName, SPListTemplateType.DocumentLibrary);
+            spWeb.Update();
+        }
+        public static void CreateDocumentFolder(this SPList spList ,string folderName)
+        {
+            SPFolderCollection folderCollection= spList.
+                 
         }
 
     }
