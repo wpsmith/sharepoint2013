@@ -9,7 +9,7 @@ namespace TestProjesi.Classes
 {
     static class Extensions
     {
-
+        
         /// <summary>
         /// if this list is on the current web return false else return true
         /// </summary>
@@ -47,6 +47,13 @@ namespace TestProjesi.Classes
             }
             
         }
+
+        public static void CreateDocumentFolder(this SPWeb spWeb,string folderName)
+        {
+            
+            
+        }
+
     }
 }
 

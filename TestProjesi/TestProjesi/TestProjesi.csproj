@@ -63,6 +63,9 @@
     <Compile Include="Features\Feature1\Feature1.EventReceiver.cs">
       <DependentUpon>Feature1.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\Feature2\Feature2.EventReceiver.cs">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Compile>
     <Compile Include="Layouts\TestProjesi\PageAjaxTmp.aspx.cs">
       <DependentUpon>PageAjaxTmp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,6 +98,9 @@
     <None Include="Features\Feature1\Feature1.feature">
       <FeatureId>{4ab4e084-a275-4fd4-b2be-d914a4c9181b}</FeatureId>
     </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{a74d548f-09e5-4899-bdf8-cc9c48789af4}</FeatureId>
+    </None>
     <None Include="key.snk" />
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9caf23b6-5199-4569-b62b-52920612faea}</SharePointProjectItemId>
@@ -120,6 +126,9 @@
     <Content Include="AssetModule\jquery-1.11.0.js" />
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
     </Content>
     <Content Include="Layouts\TestProjesi\PageAjaxTmp.aspx" />
     <Content Include="Webparts\AjaxPageWp\AjaxPageWpUserControl.ascx" />
