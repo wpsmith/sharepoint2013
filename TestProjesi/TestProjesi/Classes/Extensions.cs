@@ -10,7 +10,7 @@ namespace TestProjesi.Classes
 {
     static class Extensions
     {
-        
+
         /// <summary>
         /// if this list is on the current web return false else return true
         /// </summary>
@@ -37,27 +37,37 @@ namespace TestProjesi.Classes
         /// </summary>
         /// <param name="list"></param>
         /// <param name="TitleName"></param>
-        public static void ChangeTitleDisplayName(this SPList list, string TitleName) 
+        public static void ChangeTitleDisplayName(this SPList list, string TitleName)
         {
-            if (list!=null)
+            if (list != null)
             {
                 SPField titlefield = list.Fields["Title"];
                 titlefield.Title = TitleName;
                 titlefield.PushChangesToLists = true;
                 titlefield.Update(true);
             }
-            
+
         }
 
-        public static void CreateDocumentLibrary(this SPWeb spWeb,string DocumentLibraryName)
+        public static void CreateDocumentLibrary(this SPWeb spWeb, string DocumentLibraryName)
         {
             spWeb.Lists.Add(DocumentLibraryName, DocumentLibraryName, SPListTemplateType.DocumentLibrary);
             spWeb.Update();
         }
-        public static void CreateDocumentFolder(this SPList spList ,string folderName)
+        public static void CreateDocumentFolder(this SPList spList, string? LibraryName,string FolderMame)
         {
-            SPFolderCollection folderCollection= 6
-                 }
+            if (LibraryName.HasValue)
+            {
+               
+            }
+            
+            if (!folderCollection.Folder.Name.Contains(folderName))
+            {
+                folderCollection.Add(url);
+
+            } 
+
+        }
 
     }
 }
