@@ -56,9 +56,8 @@ namespace TestProjesi.Classes
         }
         public static void CreateDocumentFolder(this SPList spList ,string folderName)
         {
-            SPFolderCollection folderCollection= spList.
-                 
-        }
+            SPFolderCollection folderCollection= 6
+                 }
 
     }
 }
